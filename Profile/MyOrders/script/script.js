@@ -33,41 +33,32 @@ document.querySelectorAll(".btn-cancel").forEach(function (btn) {
   btn.addEventListener("click", function () {
     let orderItem = btn.closest(".order-item");
 
-    if (!orderItem) return;
-
     let confirmCancel = confirm("Are you sure you want to cancel this order?");
     if (!confirmCancel) return;
 
     // update badge
     let badge = orderItem.querySelector(".badge-status");
-    if (badge) {
-      badge.classList.remove("delivered", "inprocess", "cancelled");
-      badge.classList.add("cancelled");
-      badge.textContent = "Cancelled";
-    }
+    badge.classList.remove("delivered", "inprocess", "cancelled");
+    badge.classList.add("cancelled");
+    badge.textContent = "Cancelled";
 
     // update message
     let statusText = orderItem.querySelector(
       ".d-flex.align-items-center.gap-2.mt-3 .small.text-muted",
     );
-    if (statusText) {
       statusText.textContent = "Your order has been cancelled";
-    }
 
     // remove cancel button
     let actions = orderItem.querySelector(".order-actions");
-    if (actions) {
       actions.querySelectorAll("button").forEach(function (actionBtn) {
         let label = actionBtn.textContent.trim();
         if (!label.startsWith("View Order")) {
           actionBtn.remove();
         }
       });
-    }
 
     // update Modal
     let viewOrderBtn = orderItem.querySelector('[data-bs-toggle="modal"]');
-    if (viewOrderBtn) {
       let modalTarget = viewOrderBtn.getAttribute("data-bs-target");
       let modal = document.querySelector(modalTarget);
 
@@ -79,11 +70,8 @@ document.querySelectorAll(".btn-cancel").forEach(function (btn) {
         }
 
         let hr = modal.querySelector(".modal-body hr");
-        if (hr) {
           hr.remove();
-        }
       }
-    }
   });
 });
 
@@ -103,8 +91,6 @@ document.querySelectorAll(".star-rating").forEach(function (container) {
           s.classList.remove("active");
         }
       });
-
-      container.setAttribute("data-selected-rating", selectedValue);
     });
   });
 });
@@ -215,10 +201,7 @@ document.querySelectorAll(".filter-option").forEach(function (option) {
 
 // Search
 document.querySelector(".filter-btn").addEventListener("click", function () {
-  let searchTerm = document
-    .querySelector(".search-input")
-    .value.trim()
-    .toLowerCase();
+  let searchTerm = document.querySelector(".search-input").value.trim().toLowerCase();
 
   document.querySelectorAll(".order-item").forEach(function (orderItem) {
     let titleEl = orderItem.querySelector(".fw-semibold");
