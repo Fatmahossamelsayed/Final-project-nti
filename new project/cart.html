@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout / Cart</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="cart-page-container">
+    <h1 class="page-title">Shopping Cart</h1>
+
+    <div class="cart-layout">
+      <!-- جدول المنتجات  -->
+      <div class="cart-products-section">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-table-body">
+            <!-- المنتجات هتتضاف هنا أوتوماتيك بالـ JS -->
+          </tbody>
+        </table>
+
+        <a href="index.html" class="back-shop">
+          <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+        </a>
+      </div>
+
+      <!-- (Summary Box) -->
+      <div class="cart-summary-box">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="summary-subtotal">$0.00</span>
+        </div>
+
+        <div class="summary-row delivery-row">
+          <span>Delivery Charge</span>
+          <span id="delivery-charge">$10.00</span>
+        </div>
+
+        <div class="summary-row grand-total-row">
+          <span>Grand Total</span>
+          <span id="grand-total">$0.00</span>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
