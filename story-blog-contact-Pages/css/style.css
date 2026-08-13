@@ -122,6 +122,7 @@
 
 .read-more-btn,.read-more-link,.shop-btn ,.blog-detail-btn,.contact-btn{
     background-color: #131118;
+      color: white;
     transition: all 0.3s ease;
     border-radius: 6px;
 }
