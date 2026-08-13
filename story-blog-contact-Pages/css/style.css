@@ -2,6 +2,24 @@
  *{
    font-family: 'Arimo';
  }
+ /*nav dropdown*/
+ .shop-menu {
+    width: 950px;
+    left: 50% !important;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.shop-menu .dropdown-item {
+    padding: 7px 0;
+    background: none;
+}
+.shop-menu .dropdown-item:hover {
+    color: #555;
+}
+.shop-menu h6 {
+    margin-bottom: 12px;
+}
+
 .krist-overlay {
     background-color: rgba(19, 17, 24, 0.55);
 }
@@ -102,9 +120,8 @@
     transform: scale(1.04);
 }
 
-.read-more-btn,.read-more-link,.shop-btn ,.blog-detail-btn,.contact-btn {
+.read-more-btn,.read-more-link,.shop-btn ,.blog-detail-btn,.contact-btn{
     background-color: #131118;
-    color: white;
     transition: all 0.3s ease;
     border-radius: 6px;
 }
@@ -188,3 +205,6 @@
     box-shadow: none;
 }
 
+.krist-footer {
+    background-color: #131118 !important;
+}

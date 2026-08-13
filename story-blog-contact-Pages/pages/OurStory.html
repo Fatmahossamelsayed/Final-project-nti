@@ -16,51 +16,114 @@
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg bg-white border-bottom">
-    <div class="container">
-        <!-- Logo / Brand -->
-        <a class="navbar-brand fw-bold" href="index.html"> Krist </a>
-        <!-- Mobile button -->
-        <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#mainNavbar"aria-controls="mainNavbar"aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container py-2">
+        <a class="navbar-brand" href="index.html">
+            <img src="../../Profile/images/KristLogo.png" alt="Krist" width="105">
+        </a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav mx-auto gap-lg-4">
+            <ul class="navbar-nav mx-auto gap-lg-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link text-dark small" href="index.html">
                         Home
                     </a>
                 </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link text-dark small dropdown-toggle"  href="#"  id="shopDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Shop
+            </a>
+            <div class="dropdown-menu shop-menu border-0 shadow-sm p-4"
+                aria-labelledby="shopDropdown">
+                <div class="row">
+    
+                    <div class="col-lg-3 border-end">
+                        <h6 class="fw-bold">Men</h6>
+                        <a href="#" class="dropdown-item">T-Shirts</a>
+                        <a href="#" class="dropdown-item">Casual Shirts</a>
+                        <a href="#" class="dropdown-item">Formal Shirts</a>
+                        <a href="#" class="dropdown-item">Jackets</a>
+                        <a href="#" class="dropdown-item">Blazers & Coats</a>
+                        <h6 class="fw-bold mt-4">Indian & Festive Wear</h6>
+                        <a href="#" class="dropdown-item">Kurtas & Kurta Sets</a>
+                        <a href="#" class="dropdown-item">Sherwanis</a>
+                    </div>
+
+                    <div class="col-lg-3 border-end">
+                        <h6 class="fw-bold">Women</h6>
+                        <a href="#" class="dropdown-item">Kurtas & Suits</a>
+                        <a href="#" class="dropdown-item">Sarees</a>
+                        <a href="#" class="dropdown-item">Ethnic Wear</a>
+                        <a href="#" class="dropdown-item">Lehenga Cholis</a>
+                        <a href="#" class="dropdown-item">Jackets</a>
+                        <h6 class="fw-bold mt-4">Western Wear</h6>
+                        <a href="#" class="dropdown-item">Dresses</a>
+                        <a href="#" class="dropdown-item">Jumpsuits</a>
+                    </div>
+                    <div class="col-lg-3 border-end">
+                        <h6 class="fw-bold">Footwear</h6>
+                        <a href="#" class="dropdown-item">Flats</a>
+                        <a href="#" class="dropdown-item">Casual Shoes</a>
+                        <a href="#" class="dropdown-item">Heels</a>
+                        <a href="#" class="dropdown-item">Boots</a>
+                        <a href="#" class="dropdown-item">Sports Shoes & Floaters</a>
+                        <h6 class="fw-bold mt-4">Product Features</h6>
+                        <a href="#" class="dropdown-item">360 Product Viewer</a>
+                        <a href="#" class="dropdown-item">Product with Video</a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h6 class="fw-bold">Kids</h6>
+                        <a href="#" class="dropdown-item">T-Shirts</a>
+                        <a href="#" class="dropdown-item">Shirts</a>
+                        <a href="#" class="dropdown-item">Jeans</a>
+                        <a href="#" class="dropdown-item">Trousers</a>
+                        <a href="#" class="dropdown-item">Party Wear</a>
+                        <a href="#" class="dropdown-item">Innerwear & Thermal</a>
+                        <a href="#" class="dropdown-item">Track Pants</a>
+                        <a href="#" class="dropdown-item">Value Pack</a>
+                    </div>
+
+                </div>
+            </div>
+        </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Shop
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fw-semibold" href="OurStory.html">
+                    <a class="nav-link text-dark small" href="OurStory.html">
                         Our Story
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="Blog.html">
+                    <a class="nav-link text-dark small" href="Blog.html">
                         Blog
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="ContactUs.html">
-                        Contact
+                    <a class="nav-link text-dark small" href="ContactUs.html">
+                        Contact Us
                     </a>
                 </li>
+
             </ul>
-            <div class="d-flex gap-3">
+
+            <div class="d-flex align-items-center gap-3">
                 <a href="#" class="text-dark">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
                 <a href="#" class="text-dark">
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
                 </a>
                 <a href="#" class="text-dark">
                     <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <a href="#" class="btn btn-dark px-4 py-2 small">
+                    Login
                 </a>
             </div>
         </div>
@@ -335,98 +398,102 @@
     </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h4 class="fw-bold mb-3">
-                        KRIST
-                    </h4>
-                    <p class="text-secondary small">
-                        Quality fashion, made accessible.
-                    </p>
-                    <div class="d-flex gap-2 mt-3">
-                        <a
-                            href="#"
-                            class="btn btn-sm btn-outline-light rounded-circle d-flex
-                                   justify-content-center align-items-center p-2">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a
-                            href="#"
-                            class="btn btn-sm btn-outline-light rounded-circle d-flex
-                                   justify-content-center align-items-center p-2">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a
-                            href="#"
-                            class="btn btn-sm btn-outline-light rounded-circle d-flex
-                                   justify-content-center align-items-center p-2">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="fw-semibold mb-3">
-                        About
-                    </h6>
-                    <a href="about.html"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        Our Story
-                    </a>
-                    <a href="#"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        Careers
-                    </a>
-                    <a href="#"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        Terms & Conditions
-                    </a>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="fw-semibold mb-3">
-                        Company
-                    </h6>
-                    <a href="contact.html"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        Contact
-                    </a>
-                    <a href="blog.html"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        Blog
-                    </a>
-                    <a href="#"
-                       class="d-block text-secondary text-decoration-none small mb-2">
-                        FAQs
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h6 class="fw-semibold mb-3">
-                        Newsletter
-                    </h6>
-                    <p class="text-secondary small">
-                        Be first to know about new collections and stories.
-                    </p>
-                    <div class="input-group mt-3">
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Enter your email">
-                        <button class="btn btn-light">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="border-top border-secondary mt-5 pt-3 text-center">
-                <p class="text-secondary small mb-0">
-                    © 2026 Krist. All rights reserved.
+   <footer class="text-white krist-footer">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <img src="../../Profile/images/KristLogoBlack.png"  alt="Krist"   width="120" class="mb-4">
+                <p class="small">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    (704) 555-0127
+                </p>
+                <p class="small">
+                    <i class="fa-regular fa-envelope me-2"></i>
+                    krist@example.com
+                </p>
+                <p class="small">
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    3891 Ranchview Dr. Richardson,<br>
+                    California 62639
                 </p>
             </div>
-        </div>
-    </footer>
+            <div class="col-6 col-lg-2">
+                <h6 class="fw-bold mb-3">Information</h6>
+                <a href="../../Profile/Personal_Info/index.html" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    My Account
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    Login
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    My Cart
+                </a>
+                <a href="../../Profile/MyWishlist/index.html" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    My Wishlist
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none small">
+                    Checkout
+                </a>
+            </div>
 
+            <div class="col-6 col-lg-2">
+                <h6 class="fw-bold mb-3">Service</h6>
+                <a href="OurStory.html"
+                   class="d-block text-white-50 text-decoration-none mb-3 small">
+                    About Us
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    Careers
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    Delivery Information
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none mb-3 small">
+                    Privacy Policy
+                </a>
+                <a href="#" class="d-block text-white-50 text-decoration-none small">
+                    Terms & Conditions
+                </a>
+            </div>
+
+            <div class="col-lg-4">
+                <h6 class="fw-bold mb-3">Subscribe</h6>
+                <p class="text-white-50 small">Enter your email below to be the first to knowabout new collections and product launches.
+                </p>
+                <div class="input-group">
+                    <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Your Email">
+                    <button class="btn btn-outline-light">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top border-secondary mt-5 pt-3  d-flex flex-column flex-md-row  justify-content-between align-items-center gap-3">
+           <div class="d-flex gap-3 text-white-50">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+            <p class="small text-white-50 mb-0">
+                ©2026 Krist. All Rights are reserved
+            </p>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-white">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
