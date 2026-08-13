@@ -53,3 +53,22 @@ document.querySelectorAll('.wishlist-heart-btn').forEach(function (btn) {
         }
     });
 });
+
+// Cart icon
+document.querySelectorAll('.move-to-cart-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        let navCartIcon = document.querySelector('.krist-icons .fa-bag-shopping');
+        let navLink = navCartIcon.parentElement;
+        let countBadge = navLink.querySelector('.cart-count');
+
+        if (!countBadge) {
+            countBadge = document.createElement('span');
+            countBadge.classList.add('cart-count');
+            countBadge.textContent = '1';
+            navLink.appendChild(countBadge);
+        } else {
+            let currentCount = parseInt(countBadge.textContent);
+            countBadge.textContent = currentCount + 1;
+        }
+    });
+});
