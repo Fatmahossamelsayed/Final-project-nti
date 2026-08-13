@@ -1,21 +1,24 @@
 //our-story carousel
 if (typeof $ !== "undefined") {
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 30,
-        nav: true,
-        navText: [ '<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>' ]
-    });
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 30,
+    nav: true,
+    navText: [
+      '<i class="fa-solid fa-arrow-left"></i>',
+      '<i class="fa-solid fa-arrow-right"></i>',
+    ],
+  });
 }
 
-//blog-details-comments 
+//blog-details-comments
 
 var form = document.getElementById("commentForm");
 var commentsContainer = document.getElementById("comments-container");
 
-if(form){
-form.addEventListener("submit", function(e) {
+if (form) {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
     var name = document.getElementById("name").value;
     var comment = document.getElementById("comment").value;
@@ -33,10 +36,10 @@ form.addEventListener("submit", function(e) {
     h6.innerText = name;
     h6.classList.add("fw-bold", "mb-1");
     var now = new Date();
-    small.innerText = now.toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
+    small.innerText = now.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
     small.classList.add("text-secondary");
     p.innerText = comment;
@@ -54,64 +57,77 @@ form.addEventListener("submit", function(e) {
     commentsContainer.appendChild(div);
 
     form.reset();
-})
-};
-
+  });
+}
 
 /* contact us*/
-var contactForm = document.getElementById('contactForm');
+var contactForm = document.getElementById("contactForm");
 var nameValidation = (input) => {
-    var inputValue = input.value.trim();
-    if (inputValue.length < 3)
-        handleError(input, "Enter at least 3 characters");
-    else
-        handleError(input);
+  var inputValue = input.value.trim();
+  if (inputValue.length < 3) handleError(input, "Enter at least 3 characters");
+  else handleError(input);
 };
 
 var emailValidation = (input) => {
-    var inputValue = input.value.trim();
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailRegex.test(inputValue))
-        handleError(input);
-    else
-        handleError(input, "Enter a valid email");
+  var inputValue = input.value.trim();
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailRegex.test(inputValue)) handleError(input);
+  else handleError(input, "Enter a valid email");
 };
 
 var subjectValidation = (input) => {
-    var inputValue = input.value.trim();
-    if (inputValue.length < 3)
-        handleError(input, "Enter a subject");
-    else
-        handleError(input);
+  var inputValue = input.value.trim();
+  if (inputValue.length < 3) handleError(input, "Enter a subject");
+  else handleError(input);
 };
 
 var messageValidation = (input) => {
-    var inputValue = input.value.trim();
-    if (inputValue.length < 10)
-        handleError(input, "Enter at least 10 characters");
-    else
-        handleError(input);
+  var inputValue = input.value.trim();
+  if (inputValue.length < 10)
+    handleError(input, "Enter at least 10 characters");
+  else handleError(input);
 };
 
 var handleError = (element, msg = "") => {
-    element.nextElementSibling.innerText = msg;
+  element.nextElementSibling.innerText = msg;
 };
 
-if(contactForm){
-contactForm.addEventListener('input', (e) => {
+if (contactForm) {
+  contactForm.addEventListener("input", (e) => {
     switch (e.target.id) {
-        case "name":
-            nameValidation(e.target);
-            break;
-        case "email":
-            emailValidation(e.target);
-            break;
-        case "subject":
-            subjectValidation(e.target);
-            break;
-        case "message":
-            messageValidation(e.target);
-            break;
+      case "name":
+        nameValidation(e.target);
+        break;
+      case "email":
+        emailValidation(e.target);
+        break;
+      case "subject":
+        subjectValidation(e.target);
+        break;
+      case "message":
+        messageValidation(e.target);
+        break;
     }
-})
-};
+  });
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var subject = document.getElementById("subject");
+    var message = document.getElementById("message");
+    nameValidation(name);
+    emailValidation(email);
+    subjectValidation(subject);
+    messageValidation(message);
+    if (
+      name.value.trim().length >= 3 &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()) &&
+      subject.value.trim().length >= 3 &&
+      message.value.trim().length >= 10
+    ) {
+      alert("Your message has been sent successfully!");
+      contactForm.reset();
+    }
+  });
+}
