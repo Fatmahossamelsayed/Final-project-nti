@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PersonalInfo</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white w-100 krist-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+        <img src="../images/KristLogo.png" alt="Krist" class="krist-logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+      <!-- Center nav links -->
+      <ul class="navbar-nav mx-auto krist-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+
+          <div class="dropdown-menu krist-mega-menu p-4">
+            <div class="row">
+
+              <!-- Men -->
+              <div class="col-md-3 mb-3 mb-md-0">
+                <p class="krist-mega-heading">Men</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Casual Shirts</a></li>
+                    <li><a href="#">Formal Shirts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Blazers &amp; Coats</a></li>
+                </ul>
+                <p class="krist-mega-heading mt-3">Indian &amp; Festive Wear</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">Kurta &amp; Kurta Sets</a></li>
+                    <li><a href="#">Sherwanis</a></li>
+                </ul>
+              </div>
+
+              <!-- Women -->
+              <div class="col-md-3 mb-3 mb-md-0">
+                <p class="krist-mega-heading">Women</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">Kurtas &amp; Suits</a></li>
+                    <li><a href="#">Sarees</a></li>
+                    <li><a href="#">Ethnic Wear</a></li>
+                    <li><a href="#">Lehenga Cholis</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+                <p class="krist-mega-heading mt-3">Western Wear</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Jumpsuits</a></li>
+                </ul>
+              </div>
+
+              <!-- Footwear -->
+              <div class="col-md-3 mb-3 mb-md-0">
+                <p class="krist-mega-heading">Footwear</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">Flats</a></li>
+                    <li><a href="#">Casual Shoes</a></li>
+                    <li><a href="#">Heels</a></li>
+                    <li><a href="#">Boots</a></li>
+                    <li><a href="#">Sports Shoes &amp; Floaters</a></li>
+                </ul>
+                <p class="krist-mega-heading mt-3">Product Features</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">360 Product Viewer</a></li>
+                    <li><a href="#">Product with Video</a></li>
+                </ul>
+              </div>
+
+              <!-- Kids -->
+              <div class="col-md-3">
+                <p class="krist-mega-heading">Kids</p>
+                <ul class="krist-mega-list">
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Trousers</a></li>
+                    <li><a href="#">Party Wear</a></li>
+                    <li><a href="#">Innerwear &amp; Thermal</a></li>
+                    <li><a href="#">Track Pants</a></li>
+                    <li><a href="#">Value Pack</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../../story-blog-contact-Pages/pages/OurStory.html">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../story-blog-contact-Pages/pages/Blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../story-blog-contact-Pages/pages/ContactUs.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <!-- Right icons + Login -->
+      <ul class="navbar-nav align-items-lg-center krist-icons">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-dark krist-login-btn" href="#">Login</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Personal Info -->
+
+    <div class="container my-5">
+        <div class="row" id="PersonalInfo">
+            <div class=" col-md-3 page-title-wrapper">
+                <h2 class="page-title">My Profile</h2>
+            </div>
+        </div>
+       
+
+        <div class="row">
+ 
+            <!-- Sidebar column -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="profile-card">
+ 
+                    <!-- Hello-user -->
+                    <div class="d-flex align-items-center gap-3 px-3 py-3 border-bottom">
+                        <img src="../images/images.jpg" alt="Robert Fox" class="rounded-circle avatar-sm">
+                        <div>
+                            <p class="mb-0 small text-muted">Hello 👋</p>
+                            <p class="mb-0 fw-semibold">Robert Fox</p>
+                        </div>
+                    </div>
+ 
+                    <!-- Nav list -->
+                    <ul class="nav flex-column profile-nav mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Personal_Info/index.html">
+                                <i class="fa-regular fa-user"></i> Personal Information
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../MyOrders/index.html">
+                                <i class="fa-solid fa-box"></i> My Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../MyWishlist/index.html">
+                                <i class="fa-regular fa-heart"></i> My Wishlists
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-location-dot"></i> Manage Addresses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-credit-card"></i> Saved Cards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-bell"></i> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gear"></i> Settings
+                            </a>
+                        </li>
+                    </ul>
+ 
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+ 
+
+                <div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="profile-avatar-wrapper">
+                        <img src="../images/images.jpg" alt="Robert Fox" class="rounded-circle profile-avatar">
+                        <span class="avatar-edit-icon">
+                            <i class="fa-solid fa-pen"></i>
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span id="editSuccessMessage" class="edit-success-msg">Profile Info edited successfully</span>
+                        <button type="submit" form="personalInfoForm" class="btn btn-dark edit-profile-btn">
+                            <i class="fa-regular fa-pen-to-square"></i> Edit Profile
+                        </button>
+                    </div>
+                </div>
+ 
+
+                <form id="personalInfoForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="firstName" class="form-label small text-muted">First Name</label>
+                            <input type="text" class="form-control" id="firstName" value="Robert">
+                             <span class="field-error" id="firstNameError"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label small text-muted">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" value="Fox">
+                            <span class="field-error" id="lastNameError"></span>
+                        </div>
+                    </div>
+ 
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="phoneNumber" class="form-label small text-muted">Phone Number</label>
+                            <input type="text" class="form-control" id="phoneNumber" value="(252) 555-0126">
+                            <span class="field-error" id="phoneNumberError"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="emailAddress" class="form-label small text-muted">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" value="robertfox@exmple.com">
+                            <span class="field-error" id="emailAddressError"></span>
+                        </div>
+                    </div>
+ 
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="address" class="form-label small text-muted">Address</label>
+                            <input type="text" class="form-control" id="address" value="2464 Royal Ln. Mesa, New Jersey 45463">
+                            <span class="field-error" id="addressError"></span>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="krist-footer text-light py-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Logo + contact -->
+      <div class="col-lg-3 col-md-6">
+        <a class="navbar-brand text-light d-inline-block mb-3" href="#">
+            <img src="../images/KristLogoBlack.png" alt="Krist" class="krist-logo">
+        </a>
+        <p class="mb-2"><i class="fa-solid fa-phone me-2"></i>(704) 555-0127</p>
+        <p class="mb-2"><i class="fa-regular fa-envelope me-2"></i>krist@example.com</p>
+        <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i>3891 Ranchview Dr. Richardson, California 62639</p>
+      </div>
+
+      <!-- Information -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-semibold mb-3">Information</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">My Cart</a></li>
+          <li><a href="#">My Wishlist</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+
+      <!-- Service -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-semibold mb-3">Service</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-semibold mb-3">Subscribe</h6>
+        <p class="small text-secondary mb-3">
+            Enter your email below to be the first to know about new collections and product launches.
+        </p>
+        <form id="footerSubscribeForm">
+            <div class="footer-subscribe-form d-flex align-items-center">
+                <i class="fa-regular fa-envelope ms-2 text-secondary"></i>
+                <input type="email" class="form-control" id="footerEmailInput" placeholder="Your Email">
+                <button type="submit" class="btn text-light">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <span class="field-error footer-field-error" id="footerEmailError"></span>
+            <span class="footer-success-msg" id="footerSuccessMessage">Thanks for subscribing!</span>
+        </form>
+      </div>
+    </div>
+
+    <hr class="my-4 border-secondary">
+
+    <!-- Bottom bar -->
+    <div class="row align-items-center">
+
+      <div class="col-md-4 mb-3 mb-md-0 d-flex gap-2">
+    <span class="payment-badge"><i class="fa-brands fa-cc-visa"></i></span>
+    <span class="payment-badge"><i class="fa-brands fa-cc-mastercard"></i></span>
+    <span class="payment-badge"><i class="fa-brands fa-google-pay"></i></span>
+    <span class="payment-badge"><i class="fa-brands fa-cc-amex"></i></span>
+    <span class="payment-badge"><i class="fa-brands fa-cc-paypal"></i></span>
+</div>
+
+      <div class="col-md-4 text-center mb-3 mb-md-0 small text-secondary">
+        &copy;2023 Krist All Rights are reserved
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-md-end gap-3">
+        <a href="#" class="text-light"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-light"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
