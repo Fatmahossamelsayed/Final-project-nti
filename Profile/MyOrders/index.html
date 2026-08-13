@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>MyOrders</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white w-100 krist-navbar"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="../images/KristLogo.png" alt="Krist" class="krist-logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- Center nav links -->
+          <ul class="navbar-nav mx-auto krist-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+
+              <div class="dropdown-menu krist-mega-menu p-4">
+                <div class="row">
+                  <!-- Men -->
+                  <div class="col-md-3 mb-3 mb-md-0">
+                    <p class="krist-mega-heading">Men</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">T-Shirts</a></li>
+                      <li><a href="#">Casual Shirts</a></li>
+                      <li><a href="#">Formal Shirts</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Blazers &amp; Coats</a></li>
+                    </ul>
+                    <p class="krist-mega-heading mt-3">
+                      Indian &amp; Festive Wear
+                    </p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">Kurta &amp; Kurta Sets</a></li>
+                      <li><a href="#">Sherwanis</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Women -->
+                  <div class="col-md-3 mb-3 mb-md-0">
+                    <p class="krist-mega-heading">Women</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">Kurtas &amp; Suits</a></li>
+                      <li><a href="#">Sarees</a></li>
+                      <li><a href="#">Ethnic Wear</a></li>
+                      <li><a href="#">Lehenga Cholis</a></li>
+                      <li><a href="#">Jackets</a></li>
+                    </ul>
+                    <p class="krist-mega-heading mt-3">Western Wear</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">Dresses</a></li>
+                      <li><a href="#">Jumpsuits</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Footwear -->
+                  <div class="col-md-3 mb-3 mb-md-0">
+                    <p class="krist-mega-heading">Footwear</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">Flats</a></li>
+                      <li><a href="#">Casual Shoes</a></li>
+                      <li><a href="#">Heels</a></li>
+                      <li><a href="#">Boots</a></li>
+                      <li><a href="#">Sports Shoes &amp; Floaters</a></li>
+                    </ul>
+                    <p class="krist-mega-heading mt-3">Product Features</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">360 Product Viewer</a></li>
+                      <li><a href="#">Product with Video</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Kids -->
+                  <div class="col-md-3">
+                    <p class="krist-mega-heading">Kids</p>
+                    <ul class="krist-mega-list">
+                      <li><a href="#">T-Shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Trousers</a></li>
+                      <li><a href="#">Party Wear</a></li>
+                      <li><a href="#">Innerwear &amp; Thermal</a></li>
+                      <li><a href="#">Track Pants</a></li>
+                      <li><a href="#">Value Pack</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../story-blog-contact-Pages/pages/OurStory.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../story-blog-contact-Pages/pages/Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../story-blog-contact-Pages/pages/ContactUs.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Nav icons + Login -->
+          <ul class="navbar-nav align-items-lg-center krist-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../MyWishlist/index.html"
+                ><i class="fa-regular fa-heart"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-dark krist-login-btn" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div id="MyOrders">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4"
+        >
+          <h2 class="page-title mb-0">My Profile</h2>
+
+          <form class="d-flex align-items-center gap-2 flex-wrap">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="search"
+                class="form-control search-input"
+                placeholder="Search"
+              />
+            </div>
+            <button type="button" class="btn btn-dark filter-btn">
+              Search <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-dark filter-btn dropdown-toggle-no-caret"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filter <i class="fa-solid fa-sliders"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end filter-dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item filter-option active"
+                    href="#"
+                    data-filter="all"
+                    >All</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    href="#"
+                    data-filter="delivered"
+                    >Delivered</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    href="#"
+                    data-filter="inprocess"
+                    >In Process</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    href="#"
+                    data-filter="cancelled"
+                    >Cancelled</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Sidebar column -->
+        <div class="col-lg-3 mb-4 mb-lg-0">
+          <div class="profile-card">
+            <!-- Hello-user -->
+            <div
+              class="d-flex align-items-center gap-3 px-3 py-3 border-bottom"
+            >
+              <img
+                src="../images/images.jpg"
+                alt="Robert Fox"
+                class="rounded-circle avatar-sm"
+              />
+              <div>
+                <p class="mb-0 small text-muted">Hello 👋</p>
+                <p class="mb-0 fw-semibold">Robert Fox</p>
+              </div>
+            </div>
+
+            <!-- Nav list -->
+            <ul class="nav flex-column profile-nav mt-2">
+              <li class="nav-item">
+                <a class="nav-link" href="../Personal_Info/index.html">
+                  <i class="fa-regular fa-user"></i> Personal Information
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../MyOrders/index.html">
+                  <i class="fa-solid fa-box"></i> My Orders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../MyWishlist/index.html">
+                  <i class="fa-regular fa-heart"></i> My Wishlists
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-location-dot"></i> Manage Addresses
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-credit-card"></i> Saved Cards
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-bell"></i> Notifications
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-gear"></i> Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+
+          <div id="MyOrders">
+            <!--first order-->
+            <div class="order-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="../images/PinkDress.jpg"
+                    alt="Girls Pink Moana Printed Dress"
+                    class="order-thumb"
+                  />
+                  <div>
+                    <p class="fw-semibold mb-1">
+                      Girls Pink Moana Printed Dress
+                    </p>
+                    <p class="small text-muted mb-1">Size: S</p>
+                    <p class="small text-muted mb-0">Qty: 1</p>
+                  </div>
+                </div>
+                <div class="order-price fw-semibold">$80.00</div>
+                <div class="d-flex flex-column gap-2 order-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal1"
+                  >
+                    View Order
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal1"
+                  >
+                    Write A Review
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <span class="badge-status delivered">Delivered</span>
+                <span class="small text-muted"
+                  >Your product has been delivered</span
+                >
+              </div>
+            </div>
+
+            <hr class="order-divider" />
+            <!--second order-->
+            <div class="order-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="../images/WomanBag.jpg"
+                    alt="Women Textured Handheld Bag"
+                    class="order-thumb"
+                  />
+                  <div>
+                    <p class="fw-semibold mb-1">Women Textured Handheld Bag</p>
+                    <p class="small text-muted mb-1">Size: Regular</p>
+                    <p class="small text-muted mb-0">Qty: 1</p>
+                  </div>
+                </div>
+                <div class="order-price fw-semibold">$80.00</div>
+                <div class="d-flex flex-column gap-2 order-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal2"
+                  >
+                    View Order
+                  </button>
+                  <button type="button" class="btn btn-cancel btn-sm">
+                    Cancel Order
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <span class="badge-status inprocess">In Process</span>
+                <span class="small text-muted"
+                  >Your product has been Inprocess</span
+                >
+              </div>
+            </div>
+
+            <hr class="order-divider" />
+            <!--third order-->
+            <div class="order-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="../images/CottonShirt.jpg"
+                    alt="Tailored Cotton Casual Shirt"
+                    class="order-thumb"
+                  />
+                  <div>
+                    <p class="fw-semibold mb-1">Tailored Cotton Casual Shirt</p>
+                    <p class="small text-muted mb-1">Size: M</p>
+                    <p class="small text-muted mb-0">Qty: 1</p>
+                  </div>
+                </div>
+                <div class="order-price fw-semibold">$40.00</div>
+                <div class="d-flex flex-column gap-2 order-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal3"
+                  >
+                    View Order
+                  </button>
+                  <button type="button" class="btn btn-cancel btn-sm">
+                    Cancel Order
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <span class="badge-status inprocess">In Process</span>
+                <span class="small text-muted"
+                  >Your product has been Inprocess</span
+                >
+              </div>
+            </div>
+
+            <hr class="order-divider" />
+            <!--fourth order-->
+            <div class="order-item">
+              <div
+                class="d-flex justify-content-between align-items-start flex-wrap gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="../images/AllenSolly.jpg"
+                    alt="Brown Leather Jacket"
+                    class="order-thumb"
+                  />
+                  <div>
+                    <p class="fw-semibold mb-1">Brown Leather Jacket</p>
+                    <p class="small text-muted mb-1">Size: L</p>
+                    <p class="small text-muted mb-0">Qty: 1</p>
+                  </div>
+                </div>
+                <div class="order-price fw-semibold">$60.00</div>
+                <div class="d-flex flex-column gap-2 order-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal4"
+                  >
+                    View Order
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-3">
+                <span class="badge-status cancelled">Cancelled</span>
+                <span class="small text-muted"
+                  >Your order has been cancelled</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+
+    <footer class="krist-footer text-light py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <a class="navbar-brand text-light d-inline-block mb-3" href="#">
+              <img
+                src="../images/KristLogoBlack.png"
+                alt="Krist"
+                class="krist-logo"
+              />
+            </a>
+            <p class="mb-2">
+              <i class="fa-solid fa-phone me-2"></i>(704) 555-0127
+            </p>
+            <p class="mb-2">
+              <i class="fa-regular fa-envelope me-2"></i>krist@example.com
+            </p>
+            <p class="mb-0">
+              <i class="fa-solid fa-location-dot me-2"></i>3891 Ranchview Dr.
+              Richardson, California 62639
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="text-uppercase fw-semibold mb-3">Information</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Cart</a></li>
+              <li><a href="#">My Wishlist</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="text-uppercase fw-semibold mb-3">Service</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="text-uppercase fw-semibold mb-3">Subscribe</h6>
+            <p class="small text-secondary mb-3">
+              Enter your email below to be the first to know about new
+              collections and product launches.
+            </p>
+            <form id="footerSubscribeForm">
+              <div class="footer-subscribe-form d-flex align-items-center">
+                <i class="fa-regular fa-envelope ms-2 text-secondary"></i>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="footerEmailInput"
+                  placeholder="Your Email"
+                />
+                <button type="submit" class="btn text-light">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <span
+                class="field-error footer-field-error"
+                id="footerEmailError"
+              ></span>
+              <span class="footer-success-msg" id="footerSuccessMessage"
+                >Thanks for subscribing!</span
+              >
+            </form>
+          </div>
+        </div>
+
+        <hr class="my-4 border-secondary" />
+
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-3 mb-md-0 d-flex gap-2">
+            <span class="payment-badge"
+              ><i class="fa-brands fa-cc-visa"></i
+            ></span>
+            <span class="payment-badge"
+              ><i class="fa-brands fa-cc-mastercard"></i
+            ></span>
+            <span class="payment-badge"
+              ><i class="fa-brands fa-google-pay"></i
+            ></span>
+            <span class="payment-badge"
+              ><i class="fa-brands fa-cc-amex"></i
+            ></span>
+            <span class="payment-badge"
+              ><i class="fa-brands fa-cc-paypal"></i
+            ></span>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 mb-md-0 small text-secondary">
+            &copy;2023 Krist All Rights are reserved
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-md-end gap-3">
+            <a href="#" class="text-light"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-light"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-light"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Order modals-->
+     <!--first modal-->
+    <div class="modal fade" id="orderModal1" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content order-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4 mb-4">
+              <div class="col-md-5">
+                <img
+                  src="../images/PinkDress.jpg"
+                  alt="Girls Pink Moana Printed Dress"
+                  class="order-modal-img"
+                />
+              </div>
+              <div class="col-md-7">
+                <h5 class="fw-semibold mb-2">Girls Pink Moana Printed Dress</h5>
+                <p class="order-modal-price mb-2">$80.00</p>
+                <p class="small text-muted mb-1">Size: S</p>
+                <p class="small text-muted mb-3">Qty: 1</p>
+                <p class="small text-muted mb-0">
+                  A playful printed dress made from soft, breathable cotton
+                  blend fabric, featuring a comfortable fit perfect for everyday
+                  wear and special occasions alike.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="order-review-section" id="orderReview1">
+              <h6 class="fw-semibold mb-3">Add your Review</h6>
+
+              <p class="small mb-2">Your Rating</p>
+              <div class="star-rating mb-3">
+                <i class="fa-regular fa-star" data-value="1"></i>
+                <i class="fa-regular fa-star" data-value="2"></i>
+                <i class="fa-regular fa-star" data-value="3"></i>
+                <i class="fa-regular fa-star" data-value="4"></i>
+                <i class="fa-regular fa-star" data-value="5"></i>
+              </div>
+
+              <form class="review-form">
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Name</label>
+                  <input
+                    type="text"
+                    class="form-control review-name-input"
+                    placeholder="Enter Your Name"
+                  />
+                  <span class="field-error review-name-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control review-email-input"
+                    placeholder="Enter Your Email"
+                  />
+                  <span class="field-error review-email-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Your Review</label>
+                  <textarea
+                    class="form-control review-text-input"
+                    rows="4"
+                    placeholder="Enter Your Review"
+                  ></textarea>
+                  <span class="field-error review-text-error"></span>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <span class="review-success-msg"
+                  >Thank you for your review!</span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--second modal-->
+    <div class="modal fade" id="orderModal2" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content order-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4 mb-4">
+              <div class="col-md-5">
+                <img
+                  src="../images/WomanBag.jpg"
+                  alt="Women Textured Handheld Bag"
+                  class="order-modal-img"
+                />
+              </div>
+              <div class="col-md-7">
+                <h5 class="fw-semibold mb-2">Women Textured Handheld Bag</h5>
+                <p class="order-modal-price mb-2">$80.00</p>
+                <p class="small text-muted mb-1">Size: Regular</p>
+                <p class="small text-muted mb-3">Qty: 1</p>
+                <p class="small text-muted mb-0">
+                  A structured handheld bag with a textured finish, roomy
+                  interior, and a sturdy top handle, designed to pair
+                  effortlessly with both casual and formal outfits.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="order-review-section" id="orderReview2">
+              <h6 class="fw-semibold mb-3">Add your Review</h6>
+
+              <p class="small mb-2">Your Rating</p>
+              <div class="star-rating mb-3">
+                <i class="fa-regular fa-star" data-value="1"></i>
+                <i class="fa-regular fa-star" data-value="2"></i>
+                <i class="fa-regular fa-star" data-value="3"></i>
+                <i class="fa-regular fa-star" data-value="4"></i>
+                <i class="fa-regular fa-star" data-value="5"></i>
+              </div>
+
+              <form class="review-form">
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Name</label>
+                  <input
+                    type="text"
+                    class="form-control review-name-input"
+                    placeholder="Enter Your Name"
+                  />
+                  <span class="field-error review-name-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control review-email-input"
+                    placeholder="Enter Your Email"
+                  />
+                  <span class="field-error review-email-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Your Review</label>
+                  <textarea
+                    class="form-control review-text-input"
+                    rows="4"
+                    placeholder="Enter Your Review"
+                  ></textarea>
+                  <span class="field-error review-text-error"></span>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <span class="review-success-msg"
+                  >Thank you for your review!</span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="orderModal3" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content order-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4 mb-4">
+              <div class="col-md-5">
+                <img
+                  src="../images/CottonShirt.jpg"
+                  alt="Tailored Cotton Casual Shirt"
+                  class="order-modal-img"
+                />
+              </div>
+              <div class="col-md-7">
+                <h5 class="fw-semibold mb-2">Tailored Cotton Casual Shirt</h5>
+                <p class="order-modal-price mb-2">$40.00</p>
+                <p class="small text-muted mb-1">Size: M</p>
+                <p class="small text-muted mb-3">Qty: 1</p>
+                <p class="small text-muted mb-0">
+                  A tailored casual shirt cut from breathable cotton, offering a
+                  relaxed yet sharp silhouette suitable for both everyday wear
+                  and light layering.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <!--third modal-->
+            <div class="order-review-section" id="orderReview3">
+              <h6 class="fw-semibold mb-3">Add your Review</h6>
+
+              <p class="small mb-2">Your Rating</p>
+              <div class="star-rating mb-3">
+                <i class="fa-regular fa-star" data-value="1"></i>
+                <i class="fa-regular fa-star" data-value="2"></i>
+                <i class="fa-regular fa-star" data-value="3"></i>
+                <i class="fa-regular fa-star" data-value="4"></i>
+                <i class="fa-regular fa-star" data-value="5"></i>
+              </div>
+
+              <form class="review-form">
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Name</label>
+                  <input
+                    type="text"
+                    class="form-control review-name-input"
+                    placeholder="Enter Your Name"
+                  />
+                  <span class="field-error review-name-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control review-email-input"
+                    placeholder="Enter Your Email"
+                  />
+                  <span class="field-error review-email-error"></span>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Your Review</label>
+                  <textarea
+                    class="form-control review-text-input"
+                    rows="4"
+                    placeholder="Enter Your Review"
+                  ></textarea>
+                  <span class="field-error review-text-error"></span>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <span class="review-success-msg"
+                  >Thank you for your review!</span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="orderModal4" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content order-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4 mb-4">
+              <div class="col-md-5">
+                <img
+                  src="../images/AllenSolly.jpg"
+                  alt="Brown Leather Jacket"
+                  class="order-modal-img"
+                />
+              </div>
+              <div class="col-md-7">
+                <h5 class="fw-semibold mb-2">Brown Leather Jacket</h5>
+                <p class="order-modal-price mb-2">$60.00</p>
+                <p class="small text-muted mb-1">Size: L</p>
+                <p class="small text-muted mb-3">Qty: 1</p>
+                <p class="small text-muted mb-0">
+                  A rugged genuine leather jacket with a relaxed fit and classic
+                  collar, built to age well and pair effortlessly with both
+                  casual and layered outfits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
